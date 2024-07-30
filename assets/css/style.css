@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #186ebe;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #3498db;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.home-image img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 70px;
+    }
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: #3498db;
+    border-radius: 20%;
+    border: 12.5px solid white;
+    outline: 12.5px solid #3498db;
+}
+
+.home-content {
+    max-width: 670px;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    color: white;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: -2px 0 10px #3498db, 2px 0 10px #3498db; /* Efek neon ke kiri dan kanan */
+    }
+    50% {
+        text-shadow: -2px 0 10px #ffffff, 2px 0 10px #ffffff; /* Efek neon ke kiri dan kanan dengan warna yang berbeda (putih) */
+    }
+    100% {
+        text-shadow: -2px 0 10px #3498db, 2px 0 10px #3498dbS; /* Kembali ke warna awal */
+    }
+}
+
+h3 {
+    display: inline-block; 
+    animation: neon 1s infinite; 
+}
+
+
+
+p {
+    color: white;
+}
+
+.home-medsos {
+    margin-top: 1rem;
+}
+
+.home-medsos a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.home-medsos a:hover {
+    color: #3498db;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home {
+        width: 100%;
+    }
+}
